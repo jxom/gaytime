@@ -13,7 +13,7 @@
   "dependencies": {
     "@manypkg/cli": "^0.10.0",
     "@medipass/eslint-config-react-medipass": "8.9.3",
-    "babel-eslint": "10.0.3",
+    "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-plugin-import": "2.20.1"
   }
