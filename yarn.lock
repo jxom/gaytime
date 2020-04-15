@@ -1064,10 +1064,10 @@
     spawndamnit "^2.0.0"
     validate-npm-package-name "^3.0.0"
 
-"@medipass/eslint-config-react-medipass@8.9.3":
-  version "8.9.3"
-  resolved "https://registry.yarnpkg.com/@medipass/eslint-config-react-medipass/-/eslint-config-react-medipass-8.9.3.tgz#f1c19a218b318d861ab5de1869eaaf1726725e57"
-  integrity sha512-qzICmaU0QDClJvpy+fflprTS7It7g/RU8WYvkzBCYetJRezXZsTV50EvWJx/uf0d+ebImmkM0hVRiUb64f/a7g==
+"@medipass/eslint-config-react-medipass@8.9.9":
+  version "8.9.9"
+  resolved "https://registry.yarnpkg.com/@medipass/eslint-config-react-medipass/-/eslint-config-react-medipass-8.9.9.tgz#574fc2945ac9d25e934c2ea8ccf24d2412d4d37c"
+  integrity sha512-Xi0+vmqHDHtgX6nKcpaBJDFbl67qbOiDeladM4RElHH+h8zInTiNbT0l2hWetxaq4JMv+mM/ip9tbw2wbhQX7w==
   dependencies:
     eslint-config-react-app "3.0.6"
     eslint-plugin-flowtype "3.0.0"
