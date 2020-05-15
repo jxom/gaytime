@@ -1090,6 +1090,11 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@popperjs/core@^2.3.3":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.0.tgz#0e1bdf8d021e7ea58affade33d9d607e11365915"
+  integrity sha512-NMrDy6EWh9TPdSRiHmHH2ye1v5U0gBD7pRYwSwJvomx7Bm4GG04vu63dYiVzebLOx2obPpJugew06xVP0Nk7hA==
+
 "@types/classnames@2.2.9":
   version "2.2.9"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.9.tgz#d868b6febb02666330410fe7f58f3c4b8258be7b"
@@ -1777,10 +1782,10 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
   integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
 
-body-scroll-lock@^2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-2.6.4.tgz#567abc60ef4d656a79156781771398ef40462e94"
-  integrity sha512-NP08WsovlmxEoZP9pdlqrE+AhNaivlTrz9a0FF37BQsnOrpN48eNqivKkE7SYpM9N+YIPjsdVzfLAUQDBm6OQw==
+body-scroll-lock@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-3.0.2.tgz#97df9bb3b17a0140c4a09b3568d146ae9af6b981"
+  integrity sha512-PtItUun94iIupKry8J/h6SfRCLWZnly77KbPsTSKALmxfR282L8R0Ujkv7bydSZvLxAJS4sBJ3y/E6X8gYkGrQ==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -3216,10 +3221,10 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fannypack@5.0.0-alpha.15:
-  version "5.0.0-alpha.15"
-  resolved "https://registry.yarnpkg.com/fannypack/-/fannypack-5.0.0-alpha.15.tgz#3bccbbfba1f8bbb6fce3ff60339b294efab20565"
-  integrity sha512-mDxZjqmooNsV36oahREIfoE5gspeM5/4yCXY+wSfpSCqQzk0wjGYnt5hRtq5R429ZE7lZfjIk2dTNV6PNI2Q+Q==
+fannypack@5.0.0-alpha.24:
+  version "5.0.0-alpha.24"
+  resolved "https://registry.yarnpkg.com/fannypack/-/fannypack-5.0.0-alpha.24.tgz#47d94107093ac3ac80fde2ffe7ec387f213d7c86"
+  integrity sha512-qsPIAe35numhD1jaXYDwtkJPbRUj1uo+KlXh5PTv+oLXXdLgebAG8RaMNaYNZnvNmuY0YydlPgbdOSgwqcpxwA==
   dependencies:
     "@emotion/core" "10.0.14"
     "@emotion/is-prop-valid" "0.8.2"
@@ -3235,7 +3240,7 @@ fannypack@5.0.0-alpha.15:
     lodash "4.17.15"
     polished "3.4.1"
     react-input-mask "2.0.4"
-    reakit "1.0.0-beta.14"
+    reakit "1.0.0-rc.2"
     styled-tools "1.7.1"
 
 fast-deep-equal@^3.1.1:
@@ -5335,11 +5340,6 @@ polished@3.4.1:
   dependencies:
     "@babel/runtime" "^7.4.5"
 
-popper.js@^1.16.0:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
-
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -6032,25 +6032,35 @@ readdirp@~3.3.0:
   dependencies:
     picomatch "^2.0.7"
 
-reakit-system@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.7.2.tgz#34e5b50f7668ef0a533fbe963a095b6374d48a5b"
-  integrity sha512-IY0NwVguy2Awp0DFRzsCBtSnn5gpHtfM3pvfi6Qcwv7Wkms6ZUWxsqFpwNJTMBfXqEBo9dDuIkpCBZivtezYzA==
-
-reakit-utils@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.7.3.tgz#91acb6360b30a802e5dae9bb6c9f7a9e9535ea6a"
-  integrity sha512-sQsgKYcn+OthBkvKz+TeHlYZq2SF5ZP9RutHg7O67GI+sdYqf0BVy6VeTe28TG4Vui6hoMheiMnZqhidOtN7EA==
-
-reakit@1.0.0-beta.14:
-  version "1.0.0-beta.14"
-  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.0.0-beta.14.tgz#cea09f361e0062d2eb1515b5d1ba8ab0beeebeef"
-  integrity sha512-/KRlHT7tACx3PVvnX1DOuJxlWnfdfbdoEOJKdVPR8X4a9hkLPOZnLRaCNWKwHTVR7tAuVxo0K+ySsMuxWiGGYw==
+reakit-system@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.12.1.tgz#fc2f817f7c9159136d3f632181cad222aabe7c1f"
+  integrity sha512-92NRBxCHslIkME4y2Z5jPAOESiBbkOF2g0LE2FiPSzZwdJ9/geWfhP50y/WFAO1WIFChVREATSXqng1xhWGwwg==
   dependencies:
-    body-scroll-lock "^2.6.4"
-    popper.js "^1.16.0"
-    reakit-system "^0.7.2"
-    reakit-utils "^0.7.3"
+    reakit-utils "^0.12.0"
+
+reakit-utils@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.12.0.tgz#4335553b1bfd0c421e552bf608b5560f47c4ab1f"
+  integrity sha512-B0KUjRDu0GFDTi+FQApm4gynJGn18DuDdgCtcUytkN/AIJdKGaqHJ6FpeE1zMr1KAAUzZKrRqq/x93MrcQtvfQ==
+
+reakit-warning@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/reakit-warning/-/reakit-warning-0.3.0.tgz#24d860fd3911bfe034584173366ab0c5e193fc20"
+  integrity sha512-sJhgKQl6b4BZOo8jAXpneYFuAkx4wuftGl5KiIDAQZWg+e8YfB41QayjqM2eh0mQkG13hbc4pBOAyR5oFZxK0w==
+  dependencies:
+    reakit-utils "^0.12.0"
+
+reakit@1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.0.0-rc.2.tgz#1b3739fe3c06b7a9e2e3e2e5bdd079c8bb0cf338"
+  integrity sha512-+Snfc9Y/VMozEDXld3CJtvqgTyFCE67FXBmaDcvBuO3z2U/ZAHiAOBprF+ZN/QhsiVNMk1faj791vDBTokxS4w==
+  dependencies:
+    "@popperjs/core" "^2.3.3"
+    body-scroll-lock "^3.0.1"
+    reakit-system "^0.12.0"
+    reakit-utils "^0.12.0"
+    reakit-warning "^0.3.0"
 
 recast@0.18.5:
   version "0.18.5"
